@@ -87,7 +87,7 @@ app.get('/api', function(req,res){
 });
 
 app.get('/stat', function(req,res){
-	var query = 'select parkingid,t_count,occupied_count,t_count-occupied_count as av,((t_count-occupied_count)/t_count)*100 asfrom stat';
+	var query = 'select parkingid,t_count,occupied_count,t_count-occupied_count as av,((t_count-occupied_count)/t_count)*100 as per from stat';
 	connection.query(query, function(err, rows, fields) {
 		if (!err){
 			console.log(rows);
