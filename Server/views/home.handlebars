@@ -1,0 +1,18 @@
+{{#each rows}}
+  <div class="container">
+    <div class="jumbotron">
+      <h2><b>Parking lot {{this.parkingid}}<b></h2>  
+      <span style="color: green;">Available : {{this.av}}</span>&nbsp;&nbsp;
+      <span style="color: red;">Occupied : {{this.occupied_count}}</span>&nbsp;&nbsp;
+      <span>Total : {{this.t_count}}</span>&nbsp;&nbsp;
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped " role="progressbar"
+        aria-valuenow="{{this.av}}" aria-valuemin="0" aria-valuemax="{{this.t_count}}" style="width:{{this.per}}%">
+          {{this.per}}% available
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
+
