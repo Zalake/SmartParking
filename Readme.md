@@ -15,7 +15,7 @@
 Install dependencies using ``` npm install``` in server directory.
 
 ###Database Schema
-![Schema](schema.jpg)
+![Schema](schema.png)
 ####Triggers for schema
 ```SQL
 DELIMITER |
@@ -42,7 +42,7 @@ CREATE TRIGGER DEC
 DELIMITER ;
 ```
 ###Screenshot
-![Screenshot](screenshot.jpg)
+![Screenshot](screenshot.png)
 
 ###License
 This project is licensed under the MIT License - see the [License](License)
