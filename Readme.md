@@ -1,22 +1,22 @@
-#Smart Parking
+# Smart Parking
 >Get the availablity status of parking lots online and save your fuel!
 
-###Prerequisites
-####Software
+### Prerequisites
+#### Software
 * [Node js](https://nodejs.org/)
 * [Mysql](https://www.mysql.com/)
 * Arduino 1.6.7 IDE & ESP8266 libraries
 
-####Hardware
+#### Hardware
 * Nodemcu v2
 * RFID reader & tags
 
-###Installing
+### Installing
 Install dependencies using ``` npm install``` in server directory.
 
-###Database Schema
+### Database Schema
 ![Schema](schema.png)
-####Triggers for schema
+#### Triggers for schema
 ```SQL
 DELIMITER |
 CREATE TRIGGER INC 
@@ -41,8 +41,8 @@ CREATE TRIGGER DEC
 |
 DELIMITER ;
 ```
-###Screenshot
+### Screenshot
 ![Screenshot](screenshot.png)
 
-###License
+### License
 This project is licensed under the MIT License - see the [License](License)
